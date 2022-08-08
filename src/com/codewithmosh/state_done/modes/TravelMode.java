@@ -1,4 +1,4 @@
-package com.codewithmosh.state_done.travelmodes;
+package com.codewithmosh.state_done.modes;
 
 public interface TravelMode {
 

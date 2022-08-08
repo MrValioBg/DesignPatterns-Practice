@@ -1,6 +1,6 @@
-package com.codewithmosh.state_done.travelmodes;
+package com.codewithmosh.state_done.modes;
 
-public class BicyclingMode implements TravelMode{
+public class Bicycling implements TravelMode{
     @Override
     public Object getEta() {
         System.out.println("Calculating ETA (bicycling)");
