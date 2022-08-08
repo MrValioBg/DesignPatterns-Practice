@@ -1,1 +1,1 @@
-Excercises from CodeWithMosh's course for practicing the most common Design Patterns.
+Exercises from CodeWithMosh's course for practicing the most common Design Patterns.
