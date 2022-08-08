@@ -1,4 +1,4 @@
-package com.codewithmosh.state.travelmodes;
+package com.codewithmosh.state_done.travelmodes;
 
 public class DrivingMode implements TravelMode{
     @Override

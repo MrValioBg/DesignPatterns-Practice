@@ -1,4 +1,4 @@
-package com.codewithmosh.state.travelmodes;
+package com.codewithmosh.state_done.travelmodes;
 
 public class BicyclingMode implements TravelMode{
     @Override
