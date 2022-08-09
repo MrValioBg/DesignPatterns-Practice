@@ -1,4 +1,4 @@
-package com.codewithmosh.iterator;
+package com.codewithmosh.iterator_done;
 
 public class Product {
   private int id;
