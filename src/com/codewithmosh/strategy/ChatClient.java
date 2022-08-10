@@ -8,9 +8,9 @@ public class ChatClient {
     }
 
     public void send(String message) {
-        if (encryptionAlgorithm == "DES")
+        if (encryptionAlgorithm.equals( "DES"))
             System.out.println("Encrypting message using DES");
-        else if (encryptionAlgorithm == "AES")
+        else if (encryptionAlgorithm.equals("AES"))
             System.out.println("Encrypting message using AES");
         else
             throw new UnsupportedOperationException("Unsupported encryption algorithm");
