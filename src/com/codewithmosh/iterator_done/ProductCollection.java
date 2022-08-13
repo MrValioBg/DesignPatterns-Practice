@@ -15,6 +15,7 @@ public class ProductCollection {
 
     public static class ListIterator implements Iterator<Product> {
         private final ProductCollection collection;
+
         private int index;
 
         public ListIterator(ProductCollection collection) {
