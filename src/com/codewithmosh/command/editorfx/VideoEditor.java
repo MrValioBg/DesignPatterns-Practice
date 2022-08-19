@@ -1,4 +1,4 @@
-package com.codewithmosh.command;
+package com.codewithmosh.command.editorfx;
 
 public class VideoEditor {
     private float contrast = 0.5f;
