@@ -2,7 +2,6 @@ package com.codewithmosh.command;
 
 import com.codewithmosh.command.editorfx.AbstractUndoableCommand;
 import com.codewithmosh.command.editorfx.History;
-import com.codewithmosh.command.editorfx.UndoableCommand;
 import com.codewithmosh.command.editorfx.VideoEditor;
 
 public class SetContrastCommand extends AbstractUndoableCommand {
