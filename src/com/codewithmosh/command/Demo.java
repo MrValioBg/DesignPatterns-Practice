@@ -12,7 +12,6 @@ public class Demo {
 
         var cmdContrast = new SetContrastCommand(1.52f, videoEditor, history);
         cmdContrast.execute();
-        history.push(cmdContrast);
 
         System.out.println(videoEditor);
 
@@ -23,8 +22,6 @@ public class Demo {
 
         var cmdText = new SetTextCommand("Text?", videoEditor, history);
         cmdText.execute();
-        history.push(cmdText);
-
 
         System.out.println(videoEditor);
 
