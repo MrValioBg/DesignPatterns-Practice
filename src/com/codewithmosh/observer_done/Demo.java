@@ -1,4 +1,4 @@
-package com.codewithmosh.observer;
+package com.codewithmosh.observer_done;
 
 public class Demo {
 

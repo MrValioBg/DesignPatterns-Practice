@@ -1,7 +1,7 @@
 package com.codewithmosh;
 
 
-import com.codewithmosh.observer.Demo;
+import com.codewithmosh.observer_done.Demo;
 
 public class Main {
 

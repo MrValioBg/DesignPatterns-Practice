@@ -1,4 +1,4 @@
-package com.codewithmosh.observer;
+package com.codewithmosh.observer_done;
 
 import java.util.HashSet;
 import java.util.Set;

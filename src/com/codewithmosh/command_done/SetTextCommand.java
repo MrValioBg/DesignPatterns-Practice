@@ -1,8 +1,8 @@
-package com.codewithmosh.command;
+package com.codewithmosh.command_done;
 
-import com.codewithmosh.command.editorfx.AbstractUndoableCommand;
-import com.codewithmosh.command.editorfx.History;
-import com.codewithmosh.command.editorfx.VideoEditor;
+import com.codewithmosh.command_done.editorfx.AbstractUndoableCommand;
+import com.codewithmosh.command_done.editorfx.History;
+import com.codewithmosh.command_done.editorfx.VideoEditor;
 
 public class SetTextCommand extends AbstractUndoableCommand {
 

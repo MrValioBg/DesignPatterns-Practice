@@ -1,4 +1,4 @@
-package com.codewithmosh.observer;
+package com.codewithmosh.observer_done;
 
 import java.util.ArrayList;
 import java.util.List;
