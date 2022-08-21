@@ -8,6 +8,7 @@ public class StatusBar implements Observer {
 
     public void addStock(Stock stock) {
         stocks.add(stock);
+        stock.addObserver(this);
     }
 
     public void show() {

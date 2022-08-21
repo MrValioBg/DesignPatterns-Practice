@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StockListView implements Observer {
-    private List<Stock> stocks = new ArrayList<>();
+    private final List<Stock> stocks = new ArrayList<>();
 
     public void addStock(Stock stock) {
         stocks.add(stock);
-
+        stock.addObserver(this);
     }
 
     public void show() {

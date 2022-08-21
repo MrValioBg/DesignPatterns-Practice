@@ -10,9 +10,10 @@ public class Demo {
         var stockCoolish = new Stock("cool", 7);
         var stockFoolish = new Stock("fool", 7);
 
-        stockCoolish.addObserver(statusBar);
-        stockCoolish.addObserver(stockViewList);
-        stockFoolish.addObserver(statusBar);
+
+        statusBar.addStock(stockCoolish);
+        statusBar.addStock(stockFoolish);
+        stockViewList.addStock(stockCoolish);
 
         System.out.println("Updating stock coolish...");
         stockCoolish.setPrice(3);
