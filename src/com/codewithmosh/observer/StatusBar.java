@@ -3,8 +3,9 @@ package com.codewithmosh.observer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StatusBar implements Observer {
+public class StatusBar implements StockObserver {
     private final List<Stock> stocks = new ArrayList<>();
+
 
     public void addStock(Stock stock) {
         stocks.add(stock);

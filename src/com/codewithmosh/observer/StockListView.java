@@ -3,7 +3,7 @@ package com.codewithmosh.observer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StockListView implements Observer {
+public class StockListView implements StockObserver {
     private final List<Stock> stocks = new ArrayList<>();
 
     public void addStock(Stock stock) {

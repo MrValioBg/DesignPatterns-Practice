@@ -5,18 +5,18 @@ import java.util.Set;
 
 public class Subject {
 
-    private final Set<Observer> observerSet = new HashSet<>();
+    private final Set<StockObserver> observerSet = new HashSet<>();
 
-    protected void addObserver(Observer observer) {
+    protected void addObserver(StockObserver observer) {
         observerSet.add(observer);
     }
 
-    protected void removeObserver(Observer observer) {
+    protected void removeObserver(StockObserver observer) {
         removeObserver(observer);
     }
 
     protected void notifyObservers() {
-        for (Observer observer : observerSet) {
+        for (StockObserver observer : observerSet) {
             observer.priceUpdated();
         }
     }
