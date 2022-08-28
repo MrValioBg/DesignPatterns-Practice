@@ -1,4 +1,4 @@
-package com.codewithmosh.structural.composite;
+package com.codewithmosh.structural.composite_done;
 
 public class Demo {
   public static void show() {
