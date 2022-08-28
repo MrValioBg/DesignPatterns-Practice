@@ -1,4 +1,4 @@
-package com.codewithmosh.structural.adapter.Gmail;
+package com.codewithmosh.structural.adapter_done.Gmail;
 
 public class GmailClient  {
   public void connect() {
