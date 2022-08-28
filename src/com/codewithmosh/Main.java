@@ -1,12 +1,13 @@
 package com.codewithmosh;
 
 
-import com.codewithmosh.observer_done.Demo;
+import com.codewithmosh.chainofresponsibility_done.Demo;
 
 public class Main {
 
     public static void main(String[] args) {
+        Demo.show("sasd.numbers");
 
-        Demo.goShowMe();
     }
+
 }

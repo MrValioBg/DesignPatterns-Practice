@@ -1,4 +1,4 @@
-package com.codewithmosh.mediator;
+package com.codewithmosh.mediator_done;
 
 public class TextBox extends UIControl {
     private String content;
@@ -9,5 +9,6 @@ public class TextBox extends UIControl {
 
     public void setContent(String content) {
         this.content = content;
+        handleEventListener();
     }
 }
