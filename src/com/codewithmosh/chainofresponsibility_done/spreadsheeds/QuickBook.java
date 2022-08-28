@@ -11,7 +11,12 @@ public class QuickBook extends FormatHandler {
     }
 
     @Override
-    protected boolean doHandle(String fileName) {
-        return fileName.endsWith(FORMAT);
+    protected String getExtension() {
+        return FORMAT;
+    }
+
+    @Override
+    protected void doRead(String fileName) {
+        System.out.println("Reading file " + fileName + " using " + getClass().getSimpleName());
     }
 }

@@ -11,6 +11,6 @@ public class DataReader {
         var numbersSheet = new NumberSpreadSheet(quickBookFile);
         var excelSheet = new ExcelSpreadSheet(numbersSheet);
 
-        excelSheet.handleRequest(fileName);
+        excelSheet.read(fileName);
     }
 }

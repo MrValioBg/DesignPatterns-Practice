@@ -5,13 +5,19 @@ import com.codewithmosh.chainofresponsibility_done.spreadsheeds.handler.FormatHa
 public class ExcelSpreadSheet extends FormatHandler {
 
     private static final String FORMAT = ".xls";
+
     public ExcelSpreadSheet(FormatHandler next) {
         super(next);
     }
 
     @Override
-    protected boolean doHandle(String fileName) {
-        return fileName.endsWith(FORMAT);
+    protected String getExtension() {
+        return FORMAT;
+    }
+
+    @Override
+    protected void doRead(String fileName) {
+        System.out.println("Reading file " + fileName + " using " + getClass().getSimpleName());
     }
 
 }

@@ -8,20 +8,21 @@ public abstract class FormatHandler {
         this.next = next;
     }
 
-    public void handleRequest(String fileName) {
-        if (fileName == null) {
+    public void read(String fileName) {
+        if (fileName == null || fileName.isEmpty() || fileName.isBlank()) {
             System.out.println("Please type in a valid file name.");
             return;
         }
-        if (doHandle(fileName)) {
-            System.out.println("Handling request using class " + getClass().getSimpleName());
+        if (fileName.endsWith(getExtension())) {
+          doRead(fileName);
         } else {
             if(next == null) throw new UnsupportedOperationException("File format not supported.");
-            next.handleRequest(fileName);
+            next.read(fileName);
         }
 
     }
 
-    protected abstract boolean doHandle(String fileName);
+    protected abstract String getExtension();
+    protected abstract void doRead(String fileName);
 
 }
