@@ -1,6 +1,6 @@
-package com.codewithmosh.behavioural.visitor;
+package com.codewithmosh.behavioural.visitor_done;
 
-import com.codewithmosh.behavioural.visitor.operations.Operation;
+import com.codewithmosh.behavioural.visitor_done.operations.Operation;
 
 import java.util.ArrayList;
 import java.util.List;

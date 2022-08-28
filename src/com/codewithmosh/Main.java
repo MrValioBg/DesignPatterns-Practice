@@ -1,7 +1,7 @@
 package com.codewithmosh;
 
 
-import com.codewithmosh.behavioural.visitor.Demo;
+import com.codewithmosh.behavioural.visitor_done.Demo;
 
 public class Main {
 

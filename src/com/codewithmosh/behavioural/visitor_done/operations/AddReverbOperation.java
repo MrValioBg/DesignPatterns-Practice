@@ -1,4 +1,4 @@
-package com.codewithmosh.behavioural.visitor.operations;
+package com.codewithmosh.behavioural.visitor_done.operations;
 
 public class AddReverbOperation implements Operation {
     @Override

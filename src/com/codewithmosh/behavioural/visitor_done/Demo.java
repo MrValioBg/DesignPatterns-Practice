@@ -1,6 +1,6 @@
-package com.codewithmosh.behavioural.visitor;
+package com.codewithmosh.behavioural.visitor_done;
 
-import com.codewithmosh.behavioural.visitor.operations.NormalizeOperation;
+import com.codewithmosh.behavioural.visitor_done.operations.NormalizeOperation;
 
 public class Demo {
 
