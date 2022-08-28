@@ -1,6 +1,6 @@
 package com.codewithmosh.mediator_done;
 
-public interface Observer {
+public interface EventHandler {
 
     void handle();
 }

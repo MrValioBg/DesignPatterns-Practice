@@ -5,14 +5,14 @@ import java.util.List;
 
 public abstract class UIControl {
 
-    private final List<Observer> observerList = new ArrayList<>();
+    private final List<EventHandler> observerList = new ArrayList<>();
 
-    void addEventListener(Observer observer) {
+    void addEventHandler(EventHandler observer) {
         observerList.add(observer);
     }
 
 
-    protected void handleEventListener() {
-        observerList.forEach(Observer::handle);
+    protected void notifyEventHandlers() {
+        observerList.forEach(EventHandler::handle);
     }
 }

@@ -22,7 +22,7 @@ public class SignUpDialogBox {
 
     public SignUpDialogBox() {
         Set<UIControl> uiControlSet = Set.of(userName, password, checkBoxTerms);
-        uiControlSet.forEach(e -> e.addEventListener(this::checkIfFieldsAreFilled));
+        uiControlSet.forEach(e -> e.addEventHandler(this::checkIfFieldsAreFilled));
     }
 
     private void checkIfFieldsAreFilled() {
@@ -32,17 +32,9 @@ public class SignUpDialogBox {
         var isUserNameEmpty = (userNameContent == null || userNameContent.isEmpty());
         var isPasswordEmpty = (passwordContent == null || passwordContent.isEmpty());
 
-        if (isPasswordEmpty || isUserNameEmpty) {
-            ifTrueDisable();
-            return;
-        }
 
-        if (!checkBoxTerms.isChecked()) {
-            ifTrueDisable();
-            return;
-        }
-
-        signUpButton.setEnabled(true);
+        var isEverythingFilled = checkBoxTerms.isChecked() && !isPasswordEmpty && !isUserNameEmpty;
+        signUpButton.setEnabled(isEverythingFilled);
     }
 
     private void ifTrueDisable() {
